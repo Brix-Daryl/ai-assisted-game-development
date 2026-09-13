@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Stick Boxer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-wrapper">
+    <!-- Heads-Up Display -->
+    <header id="hud">
+      <div class="hud-box">
+        <div class="name-tag">YOU</div>
+        <div class="bar-container">
+          <div id="player-hp" class="hp-bar" style="width: 100%;"></div>
+        </div>
+      </div>
 
+      <div id="timer-box">
+        <span id="round-timer">30</span>
+      </div>
+
+      <div class="hud-box align-right">
+        <div id="opponent-name" class="name-tag">OPPONENT</div>
+        <div class="bar-container">
+          <div id="opponent-hp" class="hp-bar enemy-bar" style="width: 100%;"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2D Canvas Viewport -->
+    <main id="stage">
+      <canvas id="ringCanvas" width="400" height="420"></canvas>
+
+      <!-- On-Screen Tap Zones (Works for Mouse & Touch) -->
+      <div id="controls-overlay">
+        <div id="zone-punch" class="control-zone">
+          <span>TAP TO PUNCH</span>
+        </div>
+        <div id="zone-guard" class="control-zone">
+          <span>HOLD TO GUARD</span>
+        </div>
+      </div>
+
+      <!-- Start / End Screens -->
+      <div id="modal-screen" class="modal">
+        <div class="modal-card">
+          <h1 id="modal-title">STICK BOXER</h1>
+          <p id="modal-desc">
+            <strong>Objective:</strong> Knock out the opponent before the 30s timer runs out.<br/><br/>
+            <strong>Controls:</strong><br/>
+            • <strong>Left Side:</strong> Tap / Click to Jab<br/>
+            • <strong>Right Side:</strong> Hold to Guard / Block incoming hits
+          </p>
+          <button id="start-btn">FIGHT!</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
