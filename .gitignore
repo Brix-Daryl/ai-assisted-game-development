@@ -15,6 +15,7 @@ dist/
 build/
 out/
 *.tsbuildinfo
+*.zip
 
 # AI agent caches, scratchpads & internal logs
 .agent/
