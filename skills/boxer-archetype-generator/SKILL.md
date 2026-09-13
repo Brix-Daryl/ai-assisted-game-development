@@ -1,6 +1,7 @@
 
 ---
 name: boxer-archetype-generator
+
 description: Generates balanced opponent boxer archetypes, fighting stats, and behavioral timing configurations for 2D web arcade boxing games. Use when designing new game levels, boss encounters, or difficulty curves.
 ---
 
