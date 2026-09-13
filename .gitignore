@@ -1,0 +1,31 @@
+# Environment variables & API keys
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production / Bundler builds (For Cadeplay or web build outputs)
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# AI agent caches, scratchpads & internal logs
+.agent/
+agent_outputs/
+ai_cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
