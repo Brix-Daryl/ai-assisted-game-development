@@ -1,2 +1,12 @@
-# ai-assisted-game-development
-A repository where I can practice AI-Assisted Game Development
+# Stickman Boxer — AI-Assisted Web Game
+
+A lightweight, responsive HTML5 canvas boxing game built as part of the Withcenter AI Content Creator assessment.
+
+## Project Overview
+- **Game Concept**: A fast-paced tap-boxing reaction challenge featuring dynamic 2D canvas stickmen.
+- **Controls**: Mouse click and mobile touch compatible (Left side = Punch / Attack, Right side = Guard / Defend).
+- **AI Skill Integration**: Configured and balanced using an `agentskills.io` archetype generator skill.
+
+## Repository Structure
+- `skills/`: Agent skill definitions, instruction refinement runs, and generated archetype parameters.
+- `game.zip/`: Web game source code (HTML5, Canvas API, vanilla JavaScript).
